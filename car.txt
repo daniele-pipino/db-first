@@ -1,0 +1,32 @@
+Modellizzare la struttura di una tabella per memorizzare tutti i dati
+riguardanti delle auto usate messe in vendita da un concessionario.
+
+// struttura dati
+
+ENTITÀ CONCESSIONARIO:
+
+NOME TABELLA: auto
+
+id - INT - PRIMARY KEY(NOT_NULL, UNIQUE, AUTO-INCREMENT);
+brand - VARCHAR(15) - NOT_NULL;
+model -VARCHAR(50) - NOT_NULL;   
+frame_number - INT (NOT_NULL, UNIQUE)   //numero telaio      
+engine - VARCHAR(35) - NOT_NULL;        //motore
+engine_number - INT (NOT_NULL, UNIQUE);
+hp - SMALLINT - NOT_NULL;               //cavalli 
+displacement - SMALLINT - NOT_NULL;     //cilindrata
+transmission - VARCHAR(10) - NOT_NULL;
+traction - VARCHAR(15) - NOT_NULL;
+km - SMALLINT - NOT_NULL;
+color - VARCHAR(25) - NOT_NULL;
+tyre_brand - VARCHAR(30) - NOT_NULL;
+tyre_type - TINYINT(1) - null;         //invernali,da neve ecc...con codice di riferimento
+tyre_dyagonal - FLOAT(3,1) - NOT_NULL;
+assets - TINYINT(1) - NULL;            //assetto con codice riferimento
+state - FLOAT(2,1) -NOT_NULL;           //stato usura
+
+
+
+
+
+
